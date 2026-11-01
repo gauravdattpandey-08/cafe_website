@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Table</title>
+    <link rel="stylesheet" href="book_style.css">
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">&#9749; Brew &amp; Bean Cafe</a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About Us</a></li>
+                <li><a href="index.html#menu">Menu</a></li>
+                <li><a href="index.html#specials">Specials &amp; Hours</a></li>
+                <li><a href="book_table.html">Book a Table</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="reservation" class="reservation-section">
+        <h2 class="section-title">Reserve a Table</h2>
+        <p class="section-subtitle">Book a spot for your study group or birthday celebration</p>
+
+        <div class="form-box">
+            <form action="book_table.html" method="get">
+
+                <div class="form-group">
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="phone" id="phone" name="phone" placeholder="e.g. 9876543210" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="date">Reservation Date:</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="guests">Number of Guests:</label>
+                    <select id="guests" name="guests">
+                        <option value="1">1 Person (Solo Study)</option>
+                        <option value="2" selected>2 People</option>
+                        <option value="4">3 - 4 People</option>
+                        <option value="6">5 - 6 People (Group Table)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="request">Special Request (Optional):</label>
+                    <textarea id="request" name="request" rows="3"
+                        placeholder="Need a table near a power socket or window? Let us know!"></textarea>
+                </div>
+
+                <button type="submit" class="btn" style="width: 100%;">Confirm Table Booking</button>
+            </form>
+        </div>
+    </section>
+
+    <!--7. FOOTER-->
+    <footer>
+        <h3>&#9749; Brew &amp; Bean Cafe</h3>
+        <p><strong>Location:</strong> SCO 42, Sector 11-D Market, Chandigarh - 160011</p>
+        <p><strong>Phone:</strong> +91 98765 43210 | <strong>Email:</strong> hello@brewandbeancafe.in</p>
+        <div class="copyright">
+            &copy; 2026 Brew &amp; Bean Cafe. Designed using HTML5 &amp; CSS3 for BCA 1st Semester Web Technologies
+            Project.
+        </div>
+    </footer>
+</body>
+
+</html>
